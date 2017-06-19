@@ -30,6 +30,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private static final String PASSWORD_KEY = "password";
     private static final String EXCHANGE_KEY = "exchange";
     private static final String QUEUE_KEY = "queue";
+    private static final String ROUTING_KEY = "routing-key";
     private static final String AUTOACK_KEY = "auto-ack";
     private static final String PREFETCH_COUNT_KEY = "prefetch-count";
     private static final String TIMEOUT_KEY = "timeout";
@@ -45,6 +46,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private String username;
     private String password;
     private String queue;
+    private String routingKey;
     private String exchange;
     private boolean autoAck = false;
     private boolean requeuing = false;
@@ -78,6 +80,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
         username = context.getString(USER_KEY, ConnectionFactory.DEFAULT_USER);
         password = context.getString(PASSWORD_KEY, ConnectionFactory.DEFAULT_PASS);
         queue = context.getString(QUEUE_KEY, null);
+        routingKey = context.getString(ROUTING_KEY, null);
         exchange = context.getString(EXCHANGE_KEY, null);
         autoAck = context.getBoolean(AUTOACK_KEY, false);
         requeuing = context.getBoolean(REQUEUING, false);
@@ -113,6 +116,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
                     .setRequeing(requeuing)
                     .setChannelProcessor(getChannelProcessor())
                     .setSourceCounter(sourceCounter)
+                    .setRoutingKey(routingKey)
                     .setCounterGroup(counterGroup);
             if (null != exchange) {
                 consumer.setExchange(exchange);
