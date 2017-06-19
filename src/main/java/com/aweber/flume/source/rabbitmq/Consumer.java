@@ -49,6 +49,7 @@ public class Consumer implements Runnable {
     private String password;
     private String queue;
     private String exchange;
+    private String routingKey;
     private boolean autoAck = false;
     private boolean requeuing = false;
     private int prefetchCount = 0;
@@ -106,6 +107,11 @@ public class Consumer implements Runnable {
         this.queue = queue;
         return this;
     }
+    
+    public Consumer setRoutingKey(String routingKey) {
+        this.routingKey = routingKey;
+        return this;
+    }
 
     public Consumer setAutoAck(boolean autoAck) {
         this.autoAck = autoAck;
@@ -156,7 +162,7 @@ public class Consumer implements Runnable {
             if (null != exchange) {
                 channel.exchangeDeclare(exchange, "direct", true);
                 String queueName = channel.queueDeclare(queue, true, false, false, null).getQueue();
-                channel.queueBind(queueName, exchange, DEFAULT_ROUTING_KEY);
+                channel.queueBind(queueName, exchange, routingKey);
             }
         } catch (IOException ex) {
             logger.error("Error creating RabbitMQ channel: {}", ex);
