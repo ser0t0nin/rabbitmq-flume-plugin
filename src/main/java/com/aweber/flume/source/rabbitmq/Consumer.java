@@ -161,7 +161,7 @@ public class Consumer implements Runnable {
             channel = connection.createChannel();
             if (null != exchange) {
                 channel.exchangeDeclare(exchange, "direct", true);
-                String queueName = channel.queueDeclare(queue, true, false, false, null).getQueue();
+                String queueName = channel.queueDeclare(queue, false, false, false, null).getQueue();
                 channel.queueBind(queueName, exchange, routingKey);
             }
         } catch (IOException ex) {
