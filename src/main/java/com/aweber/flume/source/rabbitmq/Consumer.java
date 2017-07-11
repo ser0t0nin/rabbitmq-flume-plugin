@@ -52,7 +52,7 @@ public class Consumer implements Runnable {
     private String routingKey;
     private boolean autoAck = false;
     private boolean requeuing = false;
-    private int prefetchCount = 0;
+    private int prefetchCount = 100;
     private int timeout = -1;
 
     public Consumer() {
@@ -160,8 +160,10 @@ public class Consumer implements Runnable {
         try {
             channel = connection.createChannel();
             if (null != exchange) {
+		Map<String, Object> args = new HashMap<String, Object>();
+		args.put("x-message-ttl", 10000);
                 channel.exchangeDeclare(exchange, "direct", true);
-                String queueName = channel.queueDeclare(queue, true, false, false, null).getQueue();
+                String queueName = channel.queueDeclare(queue, false, false, true, args).getQueue();
                 channel.queueBind(queueName, exchange, routingKey);
             }
         } catch (IOException ex) {

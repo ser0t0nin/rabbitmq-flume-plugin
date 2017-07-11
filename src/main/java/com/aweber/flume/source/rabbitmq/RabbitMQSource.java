@@ -50,7 +50,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private String exchange;
     private boolean autoAck = false;
     private boolean requeuing = false;
-    private int prefetchCount = 0;
+    private int prefetchCount = 100;
     private int timeout = -1;
     private int consumerThreads = 1;
 
@@ -84,7 +84,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
         exchange = context.getString(EXCHANGE_KEY, null);
         autoAck = context.getBoolean(AUTOACK_KEY, false);
         requeuing = context.getBoolean(REQUEUING, false);
-        prefetchCount = context.getInteger(PREFETCH_COUNT_KEY, 0);
+        prefetchCount = context.getInteger(PREFETCH_COUNT_KEY, 100);
         timeout = context.getInteger(TIMEOUT_KEY, -1);
         consumerThreads = context.getInteger(THREAD_COUNT_KEY, 1);
 

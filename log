@@ -1,0 +1,1000 @@
+ 1024  docker-compose logs -tail 1000 -f
+ 1025  docker-compose logs --tail -f
+ 1026  docker-compose logs --tail=1000 -f
+ 1027  docker-compose ps
+ 1028  docker-compose logs --tail=1000 -f
+ 1029  docker-compose logs yuodo-aero-2
+ 1030  docker-compose logs youdo-aero-2
+ 1031  docker-compose logs youdo-aero-2 --tail=1000 -f
+ 1032  docker-compose logs --tail=1000 -f youdo-aero-2
+ 1033  cd /opt/youdmp/deploy/
+ 1034  docker-compose logs --tail=1000 -f youdo-aero-2
+ 1035  docker-compose logs --tail=1000 -f youdo-aero-1
+ 1036  telnet 172.22.0.234 3000
+ 1037  docker-compose logs --tail=1000 -f youdo-aero-1
+ 1038  docker-compose logs --tail=1000 -f youdo-aero-2
+ 1039  vi aerospike/aero-data-1/aerospike.conf 
+ 1040  vi aerospike/aero-data-2/aerospike.conf 
+ 1041  vi aerospike/aero-data-1/aerospike.conf 
+ 1042  vi aerospike/aero-data-2/aerospike.conf 
+ 1043  docker-compose stop youdo-aero-2
+ 1044  docker-compose stop youdo-aero-1
+ 1045  docker-compose start youdo-aero-1
+ 1046  docker-compose start youdo-aero-2
+ 1047  docker-compose logs --tail=1000 -f youdo-aero-1
+ 1048  docker-compose logs --tail=1000 -f youdo-aero-2
+ 1049  cat aerospike/aero-data-1/aerospike.conf 
+ 1050  Жй
+ 1051  cat aerospike/aero-data-2/aerospike.conf 
+ 1052  cat docker-compose.yml 
+ 1053  cd /opt
+ 1054  ls -la
+ 1055  mkdir aerospike
+ 1056  cd aerosp
+ 1057  cd aerospike/
+ 1058  mkdir data
+ 1059  mkdir etc
+ 1060  vi docker-compose.ymu
+ 1061  vi docker-compose.yml
+ 1062  cd etc/
+ 1063  ls -l
+ 1064  vi aerospike.conf
+ 1065  ls -la
+ 1066  cd ..
+ 1067  ls -la
+ 1068  vi docker-compose.yml 
+ 1069  vi etc/aerospike.conf 
+ 1070  cd ..
+ 1071  cd youdmp/deploy/
+ 1072  ls -l
+ 1073  cd ar
+ 1074  cd aerospike/
+ 1075  ls -la
+ 1076  cd aero-data-1
+ 1077  ls -la
+ 1078  du -sh *
+ 1079  du -s *
+ 1080  du -sh *
+ 1081  systemctl restart amc
+ 1082  cd /opt/
+ 1083  cd youdmp/deploy/
+ 1084  ls -la
+ 1085  cat docker-compose.yml 
+ 1086  :q
+ 1087  docker-compose exec youdo-aero-1 bash
+ 1088  vi aerospike/aero-data-1/aerospike.conf 
+ 1089  docker-compose logs
+ 1090  docker-compose logs --tail-1000
+ 1091  docker-compose logs --tail=1000
+ 1092  ifconfig 
+ 1093  vi aerospike/aero-data-1/aerospike.conf 
+ 1094  docker-compose exec youdo-aero-1 bash
+ 1095  ls -l
+ 1096  cd aerospike/
+ 1097  cd ..
+ 1098  ls -la
+ 1099  cd aerospike/
+ 1100  ls -la
+ 1101  cd aero-data-1/
+ 1102  ls -la
+ 1103  mkdir /opt/aerospike/data/vk-backu
+ 1104  mv -r vk-backup/* /opt/aerospike/data/vk-backup/
+ 1105  mv vk-backup/* /opt/aerospike/data/vk-backup/
+ 1106  ls -l /opt/aerospike/data/vk-backup/
+ 1107  mkdir /opt/aerospike/data/youdo-backup
+ 1108  mv youdo-backup/* /opt/aerospike/data/youdo-backup/
+ 1109  ls -l /opt/aerospike/data/youdo-backup/
+ 1110  cd /opt/aerospike/data/
+ 1111  du -sh *
+ 1112  cd /opt/youdmp/deploy/
+ 1113  docker-compose stop youdo-aero-1
+ 1114  docker-compose stop youdo-aero-2
+ 1115  cd /opt/aerospike/
+ 1116  ls -la
+ 1117  docker-compose up -d
+ 1118  docker-compose ps
+ 1119  docker-compose logs
+ 1120  history | grep ams
+ 1121  ps ax | grep ams
+ 1122  history | grep amc
+ 1123  systemctl status amc
+ 1124  systemctl restart amc
+ 1125  systemctl status amc
+ 1126  docker-compose logs
+ 1127  cat docker-compose.yml 
+ 1128  netstat -anp | grep 3000
+ 1129  netstat -anp | grep 3002
+ 1130  cat etc/aerospike.conf 
+ 1131  cat docker-compose.yml 
+ 1132  docker-compose exec youdo-aero bash
+ 1133  docker-compose logs
+ 1134  docker-compose exec youdo-aero bash
+ 1135  telnet 172.22.0.231 3002
+ 1136  telnet 172.22.0.231 3000
+ 1137  docker-compose exec youdo-aero bash
+ 1138  docker-compose down
+ 1139  vi etc/aerospike.conf 
+ 1140  docker-compose up -d
+ 1141  docker-compose logs
+ 1142  docker-compose down
+ 1143  vi etc/aerospike.conf 
+ 1144  docker-compose ps
+ 1145  docker-compose up -d
+ 1146  docker-compose logs
+ 1147  docker-compose down
+ 1148  vi etc/aerospike.conf 
+ 1149  docker-compose up -d
+ 1150  vi etc/aerospike.conf 
+ 1151  docker exec -it youdo-aero1 /bin/bash
+ 1152  docker exec -it youdo-aero-1 /bin/bash
+ 1153  htop
+ 1154  yarn application -kill application_1496852170536_0405
+ 1155  htop
+ 1156  su hdfs
+ 1157  oocd /var/log
+ 1158  cd /var/log/flume/
+ 1159  ls -la
+ 1160  tail -n 500 flume-youdo-notifications.log
+ 1161  hotp
+ 1162  htop
+ 1163  tail -n 500 flume-youdo-notifications.log
+ 1164  htop
+ 1165  tail -n 500 flume-youdo-notifications.log
+ 1166  cd ~
+ 1167  ls -la
+ 1168  cd tmp
+ 1169  ls -la
+ 1170  cd rabbitmq-flume-plugin/
+ 1171  ls -la
+ 1172  cd src
+ 1173  ls -la
+ 1174  cd main/
+ 1175  ls -la
+ 1176  cd java/
+ 1177  ls -la
+ 1178  cd com
+ 1179  ls -la
+ 1180  cd aweber/
+ 1181  cd flume/
+ 1182  ls -la
+ 1183  cd source/
+ 1184  ls -la
+ 1185  cd rabbitmq/
+ 1186  ls -la
+ 1187  vim Consumer.java 
+ 1188  ls -la
+ 1189  vim RabbitMQSource.java 
+ 1190  vim Consumer.java 
+ 1191  cd ../../../../
+ 1192  ls -la
+ 1193  mvn clean package 
+ 1194  JAVA_HOME=/usr/jdk64/jdk1.8.0_112 mvn package
+ 1195  vim ./src/main/java/com/aweber/flume/source/rabbitmq/Consumer.java 
+ 1196  htop
+ 1197  vim ./src/main/java/com/aweber/flume/source/rabbitmq/Consumer.java 
+ 1198  JAVA_HOME=/usr/jdk64/jdk1.8.0_112 mvn package -e
+ 1199  JAVA_HOME=/usr/jdk64/jdk1.8.0_112 mvn package -X
+ 1200  vim ./src/main/java/com/aweber/flume/source/rabbitmq/Consumer.java 
+ 1201  JAVA_HOME=/usr/jdk64/jdk1.8.0_112 mvn package -X
+ 1202  vim ./src/main/java/com/aweber/flume/source/rabbitmq/Consumer.java 
+ 1203  JAVA_HOME=/usr/jdk64/jdk1.8.0_112 mvn package -X
+ 1204  cd target/
+ 1205  ls -la
+ 1206  cd ..
+ 1207  ls -la
+ 1208  cd target
+ 1209  ls -la
+ 1210  cd /usr/hdp/2.6.0.3-8/flume/lib/
+ 1211  ls -la
+ 1212  cp ~/tmp/rabbitmq-flume-plugin/target/rabbitmq-flume-plugin-standalone-1.1.0.jar ./
+ 1213  cd /var/log/flume/
+ 1214  ls -la
+ 1215  tail -n 1000 flume-youdo-notifications.log
+ 1216  htop
+ 1217  tail -n 1000 flume-youdo-notifications.log
+ 1218  htop
+ 1219  tail -n 1000 flume-youdo-notifications.log
+ 1220  cat /etc/hosts
+ 1221  htop -v
+ 1222  cat /etc/hostname
+ 1223  hadoop fs -ls /
+ 1224  pip freeze
+ 1225  hive
+ 1226  cd /opt/youdmp/dbutils/
+ 1227  vim db/queries.py
+ 1228  ipython
+ 1229  su - hdfs
+ 1230  ipython
+ 1231  vim helpers/aerospike_accessor.py
+ 1232  su - hdfs
+ 1233  ipython
+ 1234  vim helpers/aerospike_accessor.py
+ 1235  ipython
+ 1236  vim helpers/aerospike_accessor.py
+ 1237  vim conf/settings.conf 
+ 1238  vim helpers/aerospike_accessor.py
+ 1239  ipython
+ 1240  vim helpers/aerospike_accessor.py
+ 1241  ipython
+ 1242  vim helpers/aerospike_accessor.py
+ 1243  ipython
+ 1244  vim helpers/aerospike_accessor.py
+ 1245  ipython
+ 1246  vim helpers/aerospike_accessor.py
+ 1247  ipython
+ 1248  vim helpers/aerospike_accessor.py
+ 1249  ipython
+ 1250  vim helpers/aerospike_accessor.py
+ 1251  ipython
+ 1252  vim helpers/aerospike_accessor.py
+ 1253  ipython
+ 1254  vim helpers/aerospike_accessor.py
+ 1255  ipython
+ 1256  vim helpers/aerospike_accessor.py
+ 1257  ipython
+ 1258  vim helpers/aerospike_accessor.py
+ 1259  ipython
+ 1260  vim helpers/aerospike_accessor.py
+ 1261  ipython
+ 1262  vim helpers/aerospike_accessor.py
+ 1263  ipython
+ 1264  vim helpers/aerospike_accessor.py
+ 1265  vim conf/settings.conf 
+ 1266  vim helpers/aerospike_accessor.py
+ 1267  ipython
+ 1268  vim helpers/aerospike_accessor.py
+ 1269  ipython
+ 1270  vim helpers/aerospike_accessor.py
+ 1271  ipython
+ 1272  history | grep amc
+ 1273  /etc/init.d/amc status
+ 1274  /etc/init.d/amc start
+ 1275  /etc/init.d/amc status
+ 1276  /etc/init.d/amc start
+ 1277  /etc/init.d/amc status
+ 1278  /etc/init.d/amc start
+ 1279  /etc/init.d/amc status
+ 1280  /etc/init.d/amc start
+ 1281  /etc/init.d/amc status
+ 1282  /etc/init.d/amc start
+ 1283  /etc/init.d/amc status
+ 1284  vim /etc/amc/amc.conf
+ 1285  docker exec -it youdo-aero-2 /bin/bash
+ 1286  docker exec -it youdo-aero-1 /bin/bash
+ 1287  netstat -tulpn | grep 3000
+ 1288  netstat -tulpn | grep 3004
+ 1289  docker exec -it youdo-aero-2 /bin/bash
+ 1290  docker exec -it youdo-aero-1 /bin/bash
+ 1291  aql
+ 1292  docker exec -it youdo-aero-1 /bin/bash
+ 1293  ipython
+ 1294  vim db/queries.py
+ 1295  su - hdfs
+ 1296  vim db/queries.py
+ 1297  ipython
+ 1298  /etc/init.d/amc start
+ 1299  cd /opt/aerosp
+ 1300  cd /opt/aerospike/
+ 1301  docker-compose exec youdo-aero bash
+ 1302  vi etc/aerospike.conf 
+ 1303  docker-compose down
+ 1304  docker-compose up -d
+ 1305  docker-compose logs
+ 1306  docker-compose down
+ 1307  vi etc/aerospike.conf 
+ 1308  docker-compose up -d
+ 1309  docker-compose logs
+ 1310  docker-compose down
+ 1311  cd /opt/youdmp/deploy/
+ 1312  docker-compose start youdo-aero-1
+ 1313  docker-compose start youdo-aero-2
+ 1314  docker-compose logs youdo-aero-1
+ 1315  docker-compose logs --tail=1000 youdo-aero-1
+ 1316  cd /opt/test
+ 1317  ls -la
+ 1318  rm -r ./*
+ 1319  rm -r ./.git
+ 1320  ls -la
+ 1321  cd .git
+ 1322  ls -la
+ 1323  cd ..
+ 1324  rm ./.git
+ 1325  rm -r ./.git
+ 1326  ls -la
+ 1327  git clone git@gitlab.youdo.sg:data/youdmp.git
+ 1328  git -vvvv clone git@gitlab.youdo.sg:data/youdmp.git
+ 1329  cd /opt/test/
+ 1330  ls -la
+ 1331  git clone git@gitlab.youdo.sg:data/youdmp.git
+ 1332  htop
+ 1333  cd /opt/aerosp
+ 1334  cd /opt/aerospike/
+ 1335  vi etc/aerospike.conf 
+ 1336  netstat -anp | grep 3000
+ 1337  netstat -anp | grep 4000
+ 1338  netstat -anp | grep 4001
+ 1339  netstat -anp | grep 4002
+ 1340  netstat -anp | grep 4003
+ 1341  vi etc/aerospike.conf 
+ 1342  vi docker-compose.yml 
+ 1343  docker-compose ps
+ 1344  docker-compose up -d
+ 1345  docker-compose ps
+ 1346  cd /opt/youdmp/deploy/
+ 1347  cat docker-compose.yml 
+ 1348  docker-compose logs --tail=1000 youdo-aero-2
+ 1349  ufw status
+ 1350  cd /opt/aerosp
+ 1351  cd /opt/aerospike/
+ 1352  docker-compose exec youdo-aero bash
+ 1353  cat /opt/youdmp/deploy/docker-compose.yml 
+ 1354  vi docker-compose.yml 
+ 1355  docker-compose down
+ 1356  docker-compose up -d
+ 1357  docker-compose down
+ 1358  vi docker-compose.yml 
+ 1359  docker-compose up -d
+ 1360  docker-compose exec youdo-aero bash
+ 1361  cat etc/aerospike.conf 
+ 1362  su - hdfs
+ 1363  ipython
+ 1364  cd /opt/youdmp/dbutils/
+ 1365  ipython
+ 1366  python load_data.py 
+ 1367  ipython
+ 1368  vim helpers/aerospike_accessor.py
+ 1369  vim db/queries.py
+ 1370  vim db/db_connector.py
+ 1371  vim helpers/aerospike_accessor.py
+ 1372  vim db/queries.py
+ 1373  ipython
+ 1374  vim helpers/aerospike_accessor.py
+ 1375  ipython
+ 1376  vim helpers/aerospike_accessor.py
+ 1377  ipython
+ 1378  python load_data.py 
+ 1379  su - hdfs
+ 1380  htop
+ 1381  cd /opt/test/
+ 1382  ls -la
+ 1383  git clone git@gitlab.youdo.sg:data/youdmp.git
+ 1384  git clone nuchitelev@gitlab.youdo.sg:data/youdmp.git
+ 1385  ls -la
+ 1386  su git
+ 1387  cd ~/.ssh
+ 1388  ls -la
+ 1389  cat id_rsa
+ 1390  cat id_rsa.pub 
+ 1391  cd /opt/test/
+ 1392  git clone git@gitlab.youdo.sg:data/youdmp.git
+ 1393  ls -la
+ 1394  cd *
+ 1395  ls -la
+ 1396  cd ..
+ 1397  git checkout origin spark-jobs
+ 1398  cd youdmp/
+ 1399  git checkout origin spark-jobs
+ 1400  git
+ 1401  git checkout origin spark_jobs
+ 1402  git checkout origin develop
+ 1403  git status
+ 1404  git checkout spark_jobs
+ 1405  ls -la
+ 1406  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1407  cd main/
+ 1408  ls -la
+ 1409  cd feature_generator/
+ 1410  ls -la
+ 1411  vim feature_generator.py 
+ 1412  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1413  vim feature_generator.py 
+ 1414  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1415  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1416  hadoop fs -text /spark2-history/local-1499159805222
+ 1417  vim feature_generator.py 
+ 1418  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1419  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1420  vim /opt/test/youdmp/main/feature_generator/GenerateFeatures.py 
+ 1421  ls -la
+ 1422  vim feature_generator.py 
+ 1423  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1424  vim feature_generator.py 
+ 1425  ls -la /tmp/spark-3880d44c-c24b-47b2-9aa5-cb197fb225d3/userFiles-cd4f9c5a-d2fa-4c39-9712-c5e26259b2a6/
+ 1426  docker ps
+ 1427  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --py-files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1428  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1429  vim feature_generator.py 
+ 1430  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1431  hadoop fs -text /spark2-history/local-1499161454396
+ 1432  vim /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py
+ 1433  cd /opt/test/youdmp/analytics_framework/FeatureGen/
+ 1434  cd /opt/test/youdmp/analytics_framework/FeaturesGen/
+ 1435  cd /opt/test/youdmp/analytics_framework/
+ 1436  cd /opt/test/youdmp/
+ 1437  ls -la
+ 1438  git submodule update
+ 1439  l s-la
+ 1440  ls -la
+ 1441  git status
+ 1442  git submodule init
+ 1443  git submodule update
+ 1444  ls -la
+ 1445  git submodule init
+ 1446  cat .gitmodules 
+ 1447  git pull
+ 1448  ls -la
+ 1449  git submodule init
+ 1450  git status
+ 1451  cat .gitmodules 
+ 1452  cat .gitignore 
+ 1453  git diff
+ 1454  git submodule
+ 1455  git -v
+ 1456  git --version
+ 1457  git fetch
+ 1458  ls -la
+ 1459  cat .git/config
+ 1460  cd ..
+ 1461  ls -la
+ 1462  rm -r ./youdmp/
+ 1463  ls -la
+ 1464  git clone git@gitlab.youdo.sg:data/youdmp.git
+ 1465  git checkout spark_jobs
+ 1466  cd youdmp/
+ 1467  git checkout spark_jobs
+ 1468  ls -la
+ 1469  git submodule init 
+ 1470  ls -la
+ 1471  git -v submodule init 
+ 1472  git --help
+ 1473  git --help -a
+ 1474  git submodule--helper
+ 1475  git submodule--helper -h
+ 1476  git submodule--helper --help
+ 1477  git submodule --help
+ 1478  git submodule status
+ 1479  ls -la
+ 1480  cd ..
+ 1481  rm -r ./youdmp/
+ 1482  git clone -b spark_jobs --recursive git@gitlab.youdo.sg:data/youdmp.git
+ 1483  ls -la
+ 1484  cd *
+ 1485  ls -la
+ 1486  cat .gitmodules 
+ 1487  git submodule update --init --recursive
+ 1488  ls -la
+ 1489  git submodule add git@gitlab.youdo.sg:data/analytics_framework.git
+ 1490  ls -la
+ 1491  cat .gitmodules 
+ 1492  cd main/feature_generator/
+ 1493  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1494  vim feature_generator.py 
+ 1495  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode client         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1496  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1497  vim feature_generator.py 
+ 1498  PYTHONPATH=$PYTHONPATH:/opt/test/youdmp/analytics_framework/FeatureGen;SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1499  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master yarn         --deploy-mode cluster         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1500  spark-submit 
+ 1501  SPARK_MAJOR_VERSION=2 spark-submit
+ 1502  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py         --master "yarn"         --deploy-mode "cluster"         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1503  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py --master "yarn" deploy-mode "cluster" --name "Production feature generation" \
+ 1504  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py --master "yarn" --deploy-mode "cluster" --name "Production feature generation" --num-executors 4 --executor-cores 8 --executor-memory 20g
+ 1505  vim feature_generator.py 
+ 1506  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py --master "yarn"       --deploy-mode "cluster"         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1507  vim feature_generator.py 
+ 1508  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit /opt/test/youdmp/main/feature_generator/feature_generator.py --master "yarn"       --deploy-mode "cluster"         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py
+ 1509  vim feature_generator.py 
+ 1510  SPARK_MAJOR_VERSION=2 /usr/bin/spark-submit --master "yarn"       --deploy-mode "cluster"         --name "Production feature generation"         --driver-memory 4g         --driver-cores 1         --num-executors 2         --executor-cores 8         --executor-memory 20g         --files /opt/test/youdmp/analytics_framework/FeatureGen/GenerateFeatures.py,/opt/test/youdmp/analytics_framework/FeatureGen/BasicFunctions.py,/opt/test/youdmp/analytics_framework/FeatureGen/SubModels.py /opt/test/youdmp/main/feature_generator/feature_generator.py
+ 1511  su hdfs
+ 1512  su spark
+ 1513  vim feature_generator.py 
+ 1514  su spark
+ 1515  vim feature_generator.py 
+ 1516  su spark
+ 1517  vim feature_generator.py 
+ 1518  su spark
+ 1519  free
+ 1520  htop
+ 1521  qiotop
+ 1522  iotop
+ 1523  which python
+ 1524  ls -l /usr/bin/python
+ 1525  ioto
+ 1526  iotop
+ 1527  su - hdfs
+ 1528  du -h /hadoop/hdfs/namenode/
+ 1529  ls -la /hadoop/hdfs/namenode/
+ 1530  ls -la /hadoop/hdfs/namenode/current/
+ 1531  cat /hadoop/hdfs/namenode/current/edits_0000000000003028082-0000000000003028095 
+ 1532  ls -la
+ 1533  cd tmp/
+ 1534  ls -la
+ 1535  cd rabbitmq-flume-plugin/
+ 1536  ls -la
+ 1537  pkill -9 -f -u flume
+ 1538  ps aux | grep flume
+ 1539  cd /var/log/flume/
+ 1540  ls -al
+ 1541  tail flume-youdo-notifications.log
+ 1542  tail -n 500 flume-youdo-notifications.log
+ 1543  pkill -9 -f -u flume
+ 1544  ps aux | grep flume
+ 1545  pkill -9 -f -u flume
+ 1546  ps aux | grep flume
+ 1547  pkill -9 -f -u flume
+ 1548  ps aux | grep flume
+ 1549  cd /usr/hdp/2.6.0.3-8/flume/l
+ 1550  cd /usr/hdp/2.6.0.3-8/flume/lib/
+ 1551  ls -la
+ 1552  rm rabbitmq-flume-plugin-standalone-1.1.0.jar
+ 1553  ls -la
+ 1554  ls -la | grep rabbit
+ 1555  ps aux | grep flume
+ 1556  pkill -9 -f -u flume
+ 1557  ps aux | grep flume
+ 1558  pkill -9 -f -u flume
+ 1559  ps aux | grep flume
+ 1560  cd /var/log/flume/
+ 1561  ls -la
+ 1562  tail -n 500 /hadoop/yarn/timeline/timeline-state-store.ldb/
+ 1563  tail -n 500 flume-youdo-notifications.log
+ 1564  ls -la
+ 1565  cd /usr/hdp/2.6.0.3-8/zeppelin
+ 1566  ls -la
+ 1567  tar -zcvf notebooks-2017-07-04.tar.gz ./notebook
+ 1568  ls -la
+ 1569  ambari-agent status
+ 1570  htop
+ 1571  docker ps
+ 1572  ls -la
+ 1573  cd /opt/test/youdmp/main/feature_generator/
+ 1574  vim feature_generator.py 
+ 1575  su spark
+ 1576  git add feature_generator.py
+ 1577  git status
+ 1578  git commit -m 'fix for spark-submit'
+ 1579  git push
+ 1580  cat feature_generator.py 
+ 1581  cd ~
+ 1582  git pull -C /opt/test/youdo
+ 1583  git pull --help
+ 1584  git -C /opt/test/youdmp pull
+ 1585  git pull --help
+ 1586  git -C /opt/test/youdmp pull --recurse-submodels
+ 1587  git -C /opt/test/youdmp pull --recurse-submoduls
+ 1588  git -C /opt/test/youdmp pull --recurse-submodules=yes
+ 1589  for file in /opt/test/youdmp/main/hive_jobs/*hql; do print $file; done
+ 1590  for file in /opt/test/youdmp/main/hive_jobs/*hql; do echo $file; done
+ 1591  for file in /opt/test/youdmp/main/hive_jobs/*hql; do hive -f $file; done
+ 1592  su hdfs && for file in /opt/test/youdmp/main/hive_jobs/*hql; do hive -f $file; done
+ 1593  htop
+ 1594  su --help
+ 1595  su hdfs -c "for file in /opt/test/youdmp/main/hive_jobs/*hql; do hive -f $file; done;"
+ 1596  date
+ 1597  date + %Y-%m-%d
+ 1598  date --help
+ 1599  date +%Y-%m-%d
+ 1600  date --date='-1 month'
+ 1601  date --date='-1 month' +%Y-%m-%d
+ 1602  python
+ 1603  cd /opt/test
+ 1604  ls -la
+ 1605  cd *
+ 1606  git status
+ 1607  git add 
+ 1608  git commit -m 'fixed for spark-submit'
+ 1609  htop
+ 1610  cd /opt/aerospike/
+ 1611  docker-compose down
+ 1612  vi docker-compose.yml 
+ 1613  docker-compose up -d
+ 1614  cat etc/aerospike.conf 
+ 1615  docker-compose down
+ 1616  vi etc/aerospike.conf 
+ 1617  docker-compose down
+ 1618  docker-compose up -d
+ 1619  vi etc/aerospike.conf 
+ 1620  docker-compose down
+ 1621  docker-compose up -d
+ 1622  docker-compose logs
+ 1623  docker-compose exec youdo-aero bash
+ 1624  cat etc/aerospike.conf 
+ 1625  docker-compose 
+ 1626  docker-compose ps
+ 1627  docker-compose down
+ 1628  vi docker-compose.yml 
+ 1629  vi etc/aerospike.conf 
+ 1630  docker-compose up -d
+ 1631  docker-compose exex youdo-aero bash
+ 1632  docker-compose exec youdo-aero bash
+ 1633  netstat -anp | grep 4000
+ 1634  docker-compose exec youdo-aero bash
+ 1635  docker-compose logs | less
+ 1636  vi docker-compose.yml 
+ 1637  docker-compose down
+ 1638  vi etc/aerospike.conf 
+ 1639  cd data/
+ 1640  ls -la
+ 1641  rm -rf aero-vk.dat 
+ 1642  rm -rf aero-youdo.dat 
+ 1643  ls -la
+ 1644  cd ..
+ 1645  docker-compose up -d
+ 1646  docker-compose logs
+ 1647  cd /opt/youdmp/deploy/
+ 1648  docker-compose exec youdo-aero-1 bash
+ 1649  docker-compose exec youdo-aero-2 bash
+ 1650  cd /opt/aerosp
+ 1651  cd /opt/aerospike/
+ 1652  ls -al
+ 1653  docker-compose logs
+ 1654  docker-compose down
+ 1655  vi etc/aerospike.conf 
+ 1656  docker-compose ps
+ 1657  docker-compose up -d
+ 1658  docker-compose down
+ 1659  vi etc/aerospike.conf 
+ 1660  docker-compose up -d
+ 1661  docker-compose logs
+ 1662  ifconfig 
+ 1663  docker-compose logs
+ 1664  docker-compose down
+ 1665  vi etc/aerospike.conf 
+ 1666  docker-compose up -d
+ 1667  docker-compose ps
+ 1668  docker-compose logs
+ 1669  docker-compose exec youdo-aero bash
+ 1670  docker-compose logs
+ 1671  docker-compose ps
+ 1672  docker-compose down
+ 1673  cat etc/aerospike.conf 
+ 1674  docker-compose up -d
+ 1675  netstat -anp | grep 4002
+ 1676  netstat -anp | grep 4000
+ 1677  docker-compose ps
+ 1678  docker-compose logs
+ 1679  docker-compose logs -f
+ 1680  docker-compose ps
+ 1681  df -h
+ 1682  docker-compose down
+ 1683  docker-compose up -d
+ 1684  docker-compose logs -f
+ 1685  cat /etc/hosts
+ 1686  cd /hadoop/
+ 1687  ls -la
+ 1688  du -sh *
+ 1689  cd hdfs/
+ 1690  ls -la
+ 1691  du -sh *
+ 1692  cd name
+ 1693  cd namenode/
+ 1694  ls -la
+ 1695  less /var/log/hadoop/root/hadoop-hdfs-nfs3-worker01.out
+ 1696  cat /etc/hosts
+ 1697  vi /etc/hosts
+ 1698  cd /var/lib/ambari-agent/
+ 1699  ls -la
+ 1700  cd data/
+ 1701  ls -la
+ 1702  ls -la | grep out
+ 1703  ls -la | grep outp
+ 1704  ping hdp-master
+ 1705  vi /etc/hosts
+ 1706  ping hdp-master
+ 1707  ls -la
+ 1708  ls -la | grep outp
+ 1709  less output-1401.txt
+ 1710  less auto_output-1498474311.txt
+ 1711  cd /hadoop/yarn/timeline/timeline-state-store.ldb
+ 1712  ls -la
+ 1713  cd /hadoop/yarn/
+ 1714  ls -la
+ 1715  cd lo
+ 1716  cd local/
+ 1717  ls -la
+ 1718  cd ..
+ 1719  ls -la
+ 1720  cat /etc/hostname 
+ 1721  vi /etc/hostname 
+ 1722  hostname
+ 1723  hostname -f
+ 1724  hostname -f worker01
+ 1725  vi /etc/hosts
+ 1726  hostname -f
+ 1727  python /usr/lib/python2.6/site-packages/ambari_agent/HostCleanup.py --silent --skip=users
+ 1728  apt-get install hugepages
+ 1729  sudo hugeadm --thp-never
+ 1730  cd /usr/hdp/
+ 1731  ls -la
+ 1732  cd current/
+ 1733  ls -la
+ 1734  cd hadoop-client
+ 1735  ls -la
+ 1736  mkdir conf
+ 1737  ls -la
+ 1738  ls -l /etc/hadoop/
+ 1739  mkdir /etc/hadoop/2.6.0.3-8
+ 1740  mkdir /etc/hadoop/2.6.0.3-8/0
+ 1741  ls -l etc/hadoop
+ 1742  ls -l /etc/hadoop
+ 1743  ls -l /etc/hadoop/
+ 1744  ls -l /etc/ | grep had
+ 1745  chowm root:hadoop /etc/hadoop/
+ 1746  chown root:hadoop /etc/hadoop/
+ 1747  ls -la
+ 1748  htop
+ 1749  cd /root/.ssh/
+ 1750  ls -la
+ 1751  less authorized_keys 
+ 1752  cd /usr/hdp/current/
+ 1753  cd hive-client
+ 1754  ls -la
+ 1755  cd conf
+ 1756  ls -la
+ 1757  mkdir conf.server
+ 1758  ls -la
+ 1759  chown hive:hadoop conf.server/
+ 1760  ls -la
+ 1761  cd conf.server/
+ 1762  ls -la
+ 1763  cd ..
+ 1764  less /var/log/ambari-metrics-collector/ambari-metrics-collector.out
+ 1765  cd /var/log/ambari-metrics-collector/
+ 1766  ls -la
+ 1767  less ambari-metrics-collector-startup.out
+ 1768  less ambari-metrics-collector.out 
+ 1769  ls -la
+ 1770  less hbase-ams-master-worker01.log
+ 1771  less hbase-ams-regionserver-worker01.log
+ 1772  cd /usr/lib
+ 1773  ls -l
+ 1774  cd /usr/
+ 1775  ls -la
+ 1776  cd lib
+ 1777  ls -la
+ 1778  cd /var/cache/
+ 1779  cd ap
+ 1780  cd apt/
+ 1781  ls -la
+ 1782  cdac
+ 1783  cd archives/
+ 1784  ls -la
+ 1785  ls -la | grep coll
+ 1786  ls -la | grep amb
+ 1787  apt-get install ambari-metrics-collector
+ 1788  apt-get install ambari-metrics-assembly 
+ 1789  apt-get remove ambari-metrics-assembly 
+ 1790  ls -l /var/lib/ambari-metrics-collector
+ 1791  ls -l /usr/lib/ambari-metrics-collector
+ 1792  apt-get remove ambari-metrics-assembly 
+ 1793  apt-get install ambari-metrics-assembly 
+ 1794  cat /etc/hosts
+ 1795  cd /tmp/spark-0b8f0eca-29b3-4b8f-a102-250460c13e30/userFiles-fb433b49-87db-4570-8565-571146205605
+ 1796  ls -la
+ 1797  ps aux | grep zeppelin
+ 1798  ps aux | grep zeppelin | wc -l
+ 1799  pkill -9 -f -u zeppelin
+ 1800  htop
+ 1801  cd /usr/hdp/2.6.0.3-8/flume/lib/
+ 1802  ls -la
+ 1803  cd /var/log
+ 1804  ls -la
+ 1805  cd ambari-metrics-collector/
+ 1806  ls -la
+ 1807  cat ambari-metrics-collector-startup.out
+ 1808  ls -la
+ 1809  ls /usr/lib/ambari-metrics-collector/
+ 1810  ls -la
+ 1811  cat hbase-ams-master-worker01.log
+ 1812  cat /var/log/ambari-metrics-collector/ambari-metrics-collector.out
+ 1813  ls /usr/lib/ambari-metrics-collector/
+ 1814  apt-get install ambari-metrics-collector
+ 1815  cd /usr/lib/ambari-metrics-collector/
+ 1816  ls -la
+ 1817  cd /usr/hdp/2.6.0.3-8/flume/lib/
+ 1818  ls -la
+ 1819  cp ~/tmp/rabbitmq-flume-plugin/target/rabbitmq-flume-plugin-standalone-1.1.0.jar ./ 
+ 1820  ls -la
+ 1821  cd /var/log
+ 1822  cd flume/
+ 1823  ls -la
+ 1824  cat flume-youdo-notifications.log
+ 1825  tail -n 500 flume-youdo-notifications.log 
+ 1826  hadoop fs -ls /
+ 1827  hadoop fs -du /
+ 1828  hadoop fs -du  -h /
+ 1829  hadoop fs -du  -h /dmp
+ 1830  cd /root/.ssh/
+ 1831  ls -la
+ 1832  cat authorized_keys 
+ 1833  cat authorized_keys | grep wor
+ 1834  vi authorized_keys 
+ 1835  ls -la
+ 1836  cat id_rsa.pub 
+ 1837  python
+ 1838  ipython
+ 1839  htop
+ 1840  docker ps -a
+ 1841  cd /opt/aerospike/
+ 1842  ll
+ 1843  docker-compose ps
+ 1844  docker-compose exec youdo-aero bash
+ 1845  htop
+ 1846  su - hdfs
+ 1847  htop
+ 1848  su - spark
+ 1849  cd /opt/youdmp/dbutils/
+ 1850  ipython
+ 1851  vim conf/settings.conf 
+ 1852  ipython
+ 1853  vim conf/settings.conf 
+ 1854  vim load_data.py 
+ 1855  ipython
+ 1856  vim load_data.py 
+ 1857  python load_data.py 
+ 1858  /opt/aerospike/
+ 1859  cd /opt/aerospike/
+ 1860  docker-compose logs --tail=1000
+ 1861  free
+ 1862  docker-compose logs --tail=1000
+ 1863  cat etc/aerospike.conf 
+ 1864  ping worker02
+ 1865  cat etc/aerospike.conf 
+ 1866  vi etc/aerospike.conf 
+ 1867  cd /usr/hdp/2.6.0.3-8/
+ 1868  ls -la
+ 1869  cd /var/lib/ambari-metrics-collector/
+ 1870  ls -la
+ 1871  netstat -anp | grep 6188
+ 1872  ls -la
+ 1873  cd ce
+ 1874  cd checkpoint/
+ 1875  ls -la
+ 1876  cd ..
+ 1877  cd /var/log
+ 1878  ls -la
+ 1879  cd ambari-metrics-collector/
+ 1880  ls -la
+ 1881  less ambari-metrics-collector.log
+ 1882  cd /etc/ambari-metrics-collector/
+ 1883  ls -la
+ 1884  cd conf/
+ 1885  ls -la
+ 1886  cat * | grep miners
+ 1887  cd /opt/aerospike/
+ 1888  cat etc/aerospike.conf 
+ 1889  ls -la
+ 1890  docker-compose logs --tail=1000
+ 1891  cat docker-compose.yml 
+ 1892  docker-compose logs --tail=1000
+ 1893  docker-compose down
+ 1894  docker-compose up -d
+ 1895  docker-compose logs -f
+ 1896  netstat -anp | grep 6188
+ 1897  cd /var/log
+ 1898  ls -la
+ 1899  cd ambari-metrics-monitor/
+ 1900  ls -la
+ 1901  cat ambari-metrics-monitor.out 
+ 1902  ls
+ 1903  cd /tmp
+ 1904  exit
+ 1905  cd /opt/youdmp/
+ 1906  cd dbutils/
+ 1907  ipython
+ 1908  ls /usr/hdp/current/spark2-client
+ 1909  exity
+ 1910  exit
+ 1911  cd /var/lib/ambari-metrics-collector/
+ 1912  ls -la
+ 1913  cd checkpoint/
+ 1914  ls -la
+ 1915  cd ..
+ 1916  ls -la
+ 1917  rm -rf *
+ 1918  netstat -anp | grep 6188
+ 1919  ls -la
+ 1920  cd /var/log/ambari-metrics-collector/
+ 1921  ls -la
+ 1922  less collector-gc.log-201707051742
+ 1923  less ambari-metrics-collector.log
+ 1924  netstat -anp | grep 6188
+ 1925  less ambari-metrics-collector.log
+ 1926  netstat -anp | grep 6188
+ 1927  less ambari-metrics-collector.log
+ 1928  ls -la
+ 1929  cat ambari-metrics-collector-startup.out
+ 1930  ps ax | grep metri
+ 1931  ps ax | grep metrics
+ 1932  ps ax | grep colelct
+ 1933  ыг рваы
+ 1934  su hdfs
+ 1935  ps ax | grep colelct
+ 1936  ps ax | grep collect
+ 1937  cd /var/lib/ambari-metrics-collector/
+ 1938  ls -la
+ 1939  cd hbase-tmp/
+ 1940  ls -la
+ 1941  rm -rf *
+ 1942  find / -name hbase
+ 1943  cd /usr/lib/ams-hbase/
+ 1944  bin/hbase clean --cleanZk
+ 1945  ./bin/hbase clean --cleanZk
+ 1946  ls -la
+ 1947  cd bin/
+ 1948  ls -la
+ 1949  su hdfs
+ 1950  docker ps
+ 1951  cat /etc/hosts
+ 1952  which pyrobuf
+ 1953  cd /usr/hdp/2.6.0.3-8/spark2/ja
+ 1954  cd /usr/hdp/2.6.0.3-8/spark2/jars/
+ 1955  ls -la
+ 1956  cd /etc/ambari-metrics-collector/
+ 1957  cd conf/
+ 1958  ls -la
+ 1959  rm -rf *
+ 1960  cd /var/lib/ambari-metrics-collector/
+ 1961  ls -la
+ 1962  cat /etc/group
+ 1963  less /etc/passwd
+ 1964  vi /etc/group
+ 1965  cd /opt/test/youdmp/dbutils/
+ 1966  vim helpers/aerospike_accessor.py 
+ 1967  cd
+ 1968  cd /opt/youdmp/
+ 1969  vim proto/task.proto 
+ 1970  ipython
+ 1971  cd dbutils/
+ 1972  vim helpers/aerospike_accessor.py
+ 1973  ipython
+ 1974  vim helpers/aerospike_accessor.py
+ 1975  ls
+ 1976  vim task_templates.py
+ 1977  vim ../proto/task.proto 
+ 1978  history | grep pyrobuf
+ 1979  vim ../proto/user.proto 
+ 1980  vim db/queries.py
+ 1981  find / -name pg_queries.py
+ 1982  vim helpers/aerospike_accessor.py
+ 1983  vim db/db_connector.py
+ 1984  vim items.py
+ 1985  vim data.py
+ 1986  vim db/pg_queries.py
+ 1987  vim data.py
+ 1988  vim db/queries.py
+ 1989  ipython
+ 1990  cd
+ 1991  ll
+ 1992  cd /opt/test/youdmp/dbutils/
+ 1993  vim data.py 
+ 1994  vim items.py 
+ 1995  vim db/queries.py 
+ 1996  vim db/pg_queries.py 
+ 1997  vim task_templates.py
+ 1998  vim helpers/aerospike_accessor.py 
+ 1999  ipython
+ 2000  exit
+ 2001  cd ~
+ 2002  ls -la
+ 2003  cd tmp/rabbitmq-flume-plugin/
+ 2004  ls -la
+ 2005  cd src
+ 2006  ls -la
+ 2007  cd main/
+ 2008  ls -la
+ 2009  cd java/
+ 2010  ls -la
+ 2011  cd *
+ 2012  ls -la
+ 2013  cd source/
+ 2014  ls -la
+ 2015  cd rabbitmq/
+ 2016  ls -la
+ 2017  cd Con
+ 2018  vim Consumer.java 
+ 2019  cd ../../../../../../../
+ 2020  cd ..
+ 2021  ls -la
+ 2022  cat history
+ 2023  history > log
