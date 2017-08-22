@@ -49,10 +49,11 @@ public class Consumer implements Runnable {
     private String password;
     private String queue;
     private String exchange;
+    private String exchangeType;
     private String routingKey;
     private boolean autoAck = false;
     private boolean requeuing = false;
-    private int prefetchCount = 100;
+    private int prefetchCount = 0;
     private int timeout = -1;
 
     public Consumer() {
@@ -139,6 +140,12 @@ public class Consumer implements Runnable {
         return this;
     }
 
+    public Consumer setExchangeType(String exchangeType) {
+        this.exchangeType = exchangeType;
+        return this;
+    }
+
+
     @Override
     public void run() {
         DefaultConsumer consumer;
@@ -160,9 +167,9 @@ public class Consumer implements Runnable {
         try {
             channel = connection.createChannel();
             if (null != exchange) {
-		Map<String, Object> args = new HashMap<String, Object>();
-		args.put("x-message-ttl", 10000);
-                channel.exchangeDeclare(exchange, "direct", true);
+		        Map<String, Object> args = new HashMap<String, Object>();
+		        args.put("x-message-ttl", 10000);
+                channel.exchangeDeclare(exchange, exchangeType, true);
                 String queueName = channel.queueDeclare(queue, false, false, true, args).getQueue();
                 channel.queueBind(queueName, exchange, routingKey);
             }

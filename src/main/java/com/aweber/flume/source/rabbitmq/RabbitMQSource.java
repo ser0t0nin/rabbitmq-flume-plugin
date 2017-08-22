@@ -35,6 +35,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private static final String PREFETCH_COUNT_KEY = "prefetch-count";
     private static final String TIMEOUT_KEY = "timeout";
     private static final String THREAD_COUNT_KEY = "threads";
+    private static final String EXCHANGE_TYPE_KEY = "exchange-type";
     private static final String REQUEUING = "requeuing";
     private SourceCounter sourceCounter;
     private ConnectionFactory factory;
@@ -50,7 +51,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private String exchange;
     private boolean autoAck = false;
     private boolean requeuing = false;
-    private int prefetchCount = 100;
+    private int prefetchCount = 0;
     private int timeout = -1;
     private int consumerThreads = 1;
 
@@ -82,9 +83,11 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
         queue = context.getString(QUEUE_KEY, null);
         routingKey = context.getString(ROUTING_KEY, null);
         exchange = context.getString(EXCHANGE_KEY, null);
+        exchangeType = context.getString(EXCHANGE_TYPE_KEY, 'direct');
         autoAck = context.getBoolean(AUTOACK_KEY, false);
         requeuing = context.getBoolean(REQUEUING, false);
-        prefetchCount = context.getInteger(PREFETCH_COUNT_KEY, 100);
+        prefetchCount = context.getInteger(PREFETCH_COUNT_KEY, 0);
+
         timeout = context.getInteger(TIMEOUT_KEY, -1);
         consumerThreads = context.getInteger(THREAD_COUNT_KEY, 1);
 
@@ -117,7 +120,8 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
                     .setChannelProcessor(getChannelProcessor())
                     .setSourceCounter(sourceCounter)
                     .setRoutingKey(routingKey)
-                    .setCounterGroup(counterGroup);
+                    .setCounterGroup(counterGroup)
+                    .setExchangeType(exchangeType);
             if (null != exchange) {
                 consumer.setExchange(exchange);
             }
