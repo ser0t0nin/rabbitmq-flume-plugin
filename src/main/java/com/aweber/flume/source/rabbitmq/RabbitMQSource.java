@@ -49,6 +49,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
     private String queue;
     private String routingKey;
     private String exchange;
+    private String exchangeType;
     private boolean autoAck = false;
     private boolean requeuing = false;
     private int prefetchCount = 0;
@@ -83,7 +84,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
         queue = context.getString(QUEUE_KEY, null);
         routingKey = context.getString(ROUTING_KEY, null);
         exchange = context.getString(EXCHANGE_KEY, null);
-        exchangeType = context.getString(EXCHANGE_TYPE_KEY, 'direct');
+        exchangeType = context.getString(EXCHANGE_TYPE_KEY, "direct");
         autoAck = context.getBoolean(AUTOACK_KEY, false);
         requeuing = context.getBoolean(REQUEUING, false);
         prefetchCount = context.getInteger(PREFETCH_COUNT_KEY, 0);
