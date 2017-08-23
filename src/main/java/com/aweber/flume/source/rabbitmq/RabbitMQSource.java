@@ -82,7 +82,7 @@ public class RabbitMQSource extends AbstractSource implements Configurable, Even
         username = context.getString(USER_KEY, ConnectionFactory.DEFAULT_USER);
         password = context.getString(PASSWORD_KEY, ConnectionFactory.DEFAULT_PASS);
         queue = context.getString(QUEUE_KEY, null);
-        routingKey = context.getString(ROUTING_KEY, null);
+        routingKey = context.getString(ROUTING_KEY, "");
         exchange = context.getString(EXCHANGE_KEY, null);
         exchangeType = context.getString(EXCHANGE_TYPE_KEY, "direct");
         autoAck = context.getBoolean(AUTOACK_KEY, false);
